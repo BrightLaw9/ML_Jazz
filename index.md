@@ -4,16 +4,24 @@ Jazz is a free-flowing musical language that is rooted in swing, and improvised 
 - An Attention Recurrent Neural Network (RNN) was used to capture longer patterns within the music, allowing for better musical phrases and context. 
 - The song was based on the Charlie Parker tune, Blues for Alice. Piano was selected to be the lead instrument.
 - The model was trained on collected recordings on the web of pianists, as well as snippets which I personally recorded!
-- The training workflow was as such: Recorded WAV files -> MIDI Files -> NoteSequences (serializing midi into tfrecord for training) -> SequenceExamples (labelled training data to feed into neural network) -> Training the RNN (hyperparameter tuning as well!) & Evaluate training -> Generate Music (with latest stored model checkpoints - the weights, biases, and other information of network)
+- The training workflow was as such:
+  1) Recorded WAV files
+  2) To MIDI Files
+  3) Convert to NoteSequences (serializing midi into tfrecord for training)
+  4) Create SequenceExamples (labelled training data to feed into neural network)
+  5) Training the RNN (hyperparameter tuning as well!) & Evaluate training
+  6) Generate Music (with latest stored model checkpoints - the weights, biases, and other information of network)
 
 Take a listen to some of the generated music below! (Note: it is no where near what a human might play)
 
-| Sample 1 | <audio src="Blues_for_Alice_ML_v1.mp3" controls></audio> <br />
+## Sample 1 
+<audio src="Blues_for_Alice_ML_v1.mp3" controls></audio> <br /><br />
 Notes & Notable Timestamps: 
 - Trained on a 2 layer RNN with 64 processing units each
 - 
 
-| Sample 2 | <audio src="Blues_for_Alice_ML_v2_swing.mp3" controls></audio> <br />
+## Sample 2 
+<audio src="Blues_for_Alice_ML_v2_swing.mp3" controls></audio> <br /><br />
 Notes & Notable Timestamps: 
 - Trained on a 2 layer RNN with 128 processing units each
 - At 1:20, there is instance of overfitting
@@ -21,7 +29,8 @@ Notes & Notable Timestamps:
 - 2:02 - fit the Abm7 -> Db7 harmony nicely
 - Occasional jazz articulations/phrases appearing (one at 2:37 - 2:38)
 
-| Sample 3 | <audio src="Blues_for_Alice_ML_v3_color.mp3" controls></audio> <br />
+## Sample 3 
+<audio src="Blues_for_Alice_ML_v3_color.mp3" controls></audio> <br /><br />
 Notes & Notable Timestamps: 
 - Trained on a 3 layer RNN with 64 processing units each
 - 1:20 - Interesting stepping up sequence
