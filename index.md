@@ -4,26 +4,23 @@ Jazz is a free-flowing musical language that is rooted in swing, and improvised 
 - An Attention Recurrent Neural Network (RNN) was used to capture longer patterns within the music, allowing for better musical phrases and context. 
 - The song was based on the Charlie Parker tune, Blues for Alice. Piano was selected to be the lead instrument.
 - The model was trained on collected recordings on the web of pianists, as well as snippets which I personally recorded!
-- The training workflow was as such:
-  1) Recorded WAV files
-  2) To MIDI Files
-  3) Convert to NoteSequences (serializing midi into tfrecord for training)
-  4) Create SequenceExamples (labelled training data to feed into neural network)
-  5) Training the RNN (hyperparameter tuning as well!) & Evaluate training
-  6) Generate Music (with latest stored model checkpoints - the weights, biases, and other information of network)
+- Check out the GitHub for more detailed information: [https://github.com/BrightLaw9/ML_Jazz/](url)
 
-Take a listen to some of the generated music below! (Note: it is no where near what a human might play)
+Take a listen to some of the generated music below! (Note: it's no where near that of a human)
 
 ## Sample 1 
 <audio src="Blues_for_Alice_ML_v1.mp3" controls></audio>
 Notes & Notable Timestamps: 
 - Trained on a 2 layer RNN with 64 processing units each
-- 
+- 0:51 - 1:03 - Repetition of a common starting phase
+- 1:15 - 1:16 - Blend nicely with Cm7 - F7 harmonic structure
+- Notable dissonance throughout (playing E)
 
 ## Sample 2 
 <audio src="Blues_for_Alice_ML_v2_swing.mp3" controls></audio>
 Notes & Notable Timestamps: 
 - Trained on a 2 layer RNN with 128 processing units each
+- Relatively more swing feel than others
 - At 1:20, there is instance of overfitting
 - 1:32 - interesting swing groove happening! (solid chrous of improv)
 - 2:02 - fit the Abm7 -> Db7 harmony nicely
