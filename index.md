@@ -15,13 +15,13 @@ Jazz is a free-flowing musical language that is rooted in swing, and improvised 
 Take a listen to some of the generated music below! (Note: it is no where near what a human might play)
 
 ## Sample 1 
-<audio src="Blues_for_Alice_ML_v1.mp3" controls></audio> <br /><br />
+<audio src="Blues_for_Alice_ML_v1.mp3" controls></audio>
 Notes & Notable Timestamps: 
 - Trained on a 2 layer RNN with 64 processing units each
 - 
 
 ## Sample 2 
-<audio src="Blues_for_Alice_ML_v2_swing.mp3" controls></audio> <br /><br />
+<audio src="Blues_for_Alice_ML_v2_swing.mp3" controls></audio>
 Notes & Notable Timestamps: 
 - Trained on a 2 layer RNN with 128 processing units each
 - At 1:20, there is instance of overfitting
@@ -30,7 +30,7 @@ Notes & Notable Timestamps:
 - Occasional jazz articulations/phrases appearing (one at 2:37 - 2:38)
 
 ## Sample 3 
-<audio src="Blues_for_Alice_ML_v3_color.mp3" controls></audio> <br /><br />
+<audio src="Blues_for_Alice_ML_v3_color.mp3" controls></audio>
 Notes & Notable Timestamps: 
 - Trained on a 3 layer RNN with 64 processing units each
 - 1:20 - Interesting stepping up sequence
