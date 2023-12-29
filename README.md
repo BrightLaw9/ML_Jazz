@@ -2,7 +2,7 @@
 Using machine learning (Tensorflow and Magenta) to create jazz music
 
 > [!NOTE]
-> **Check out the website for more information (including generated music): [https://brightlaw9.github.io/ML_Jazz/](url)**
+> **Check out the website for more information (including generated music): https://brightlaw9.github.io/ML_Jazz/**
 
 The ultimate goal of this project is to have AI generate a comprehensible and melodical piece of music. It should resemble the jazz style (swinging, note articulations, dynamics). In the end, elements of jazz have been learned and integrated into the music, but no where near as natural and comforting as a human would do so. 
 
