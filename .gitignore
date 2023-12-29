@@ -1,1 +1,3 @@
 model_ckpts/
+training/
+temp_exclude/

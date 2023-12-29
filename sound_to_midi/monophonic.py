@@ -271,7 +271,7 @@ def wave_to_midi(
         srate: int = 24050, #22050,
         frame_length: int = 2048,
         hop_length: int = 750,#512,
-        note_min: str = "A2",
+        note_min: str = "C4",
         note_max: str = "C8",
         p_stay_note: float = 0.9,
         p_stay_silence: float = 0.7,

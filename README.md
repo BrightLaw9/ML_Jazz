@@ -5,7 +5,7 @@ The ultimate goal of this project is to have AI generate a comprehensible and me
 
 Sample data, collected as wav files (some scraped from the web, others I personally recorded!), was converted to MIDI files for training. The Python files in sound_to_midi achieve this conversion programmatically and quickly. Also, it is programmed to produce monophonic MIDI files, so a cleaner melody line can be heared. Past trials with many channels resulted in a rather distorted sound. 
 
-Using Magenta's Melody RNN ML Model (built on Tensorflow), I trained the model with the MIDI files to produce somewhat decent sounding jazz.
+Using Magenta's Melody RNN ML Model (built on Tensorflow), I trained the model with the MIDI files to produce somewhat decent sounding jazz. Files used for training can be found in the ./training/seq_examples. These SequenceExamples are Magenta's ways of generating inputs and labels to be fed into the machine learning model. 
 
 The generated melody is then added over a backing rhythm section to complete the jazz experience.
 
