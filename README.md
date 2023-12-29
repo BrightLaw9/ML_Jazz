@@ -1,7 +1,9 @@
 # ML_Jazz
 Using machine learning (Tensorflow and Magenta) to create jazz music
 
-The ultimate goal of this project is to have AI generate a comprehensible and melodical piece of music. It should resemble the jazz style (swinging, note articulations, dynamics).
+The ultimate goal of this project is to have AI generate a comprehensible and melodical piece of music. It should resemble the jazz style (swinging, note articulations, dynamics). In the end, elements of jazz have been learned and integrated into the music, but no where near as natural and comforting as a human would do so. Take a listen to the generated music!
+
+C:\Users\lawre\ML_Jazz\temp_exclude\Blues_for_Allice_ML_v1.wav
 
 Sample data, collected as wav files (some scraped from the web, others I personally recorded!), was converted to MIDI files for training. The Python files in sound_to_midi achieve this conversion programmatically and quickly. Also, it is programmed to produce monophonic MIDI files, so a cleaner melody line can be heared. Past trials with many channels resulted in a rather distorted sound. 
 
