@@ -4,7 +4,7 @@ Jazz is a free-flowing musical language that is rooted in swing, and improvised 
 - An Attention Recurrent Neural Network (RNN) was used to capture longer patterns within the music, allowing for better musical phrases and context. 
 - The song was based on the Charlie Parker tune, Blues for Alice. Piano was selected to be the lead instrument.
 - The model was trained on collected recordings on the web of pianists, as well as snippets which I personally recorded!
-- Check out the GitHub for more detailed information: [https://github.com/BrightLaw9/ML_Jazz/](url)
+- Check out the GitHub for more detailed information: https://github.com/BrightLaw9/ML_Jazz/
 
 Take a listen to some of the generated music below! (Note: it's no where near that of a human)
 
