@@ -11,5 +11,7 @@ Using Magenta's Melody RNN ML Model (built on Tensorflow), I trained the model w
 
 The generated melody is then added over a backing rhythm section to complete the jazz experience.
 
+Note the train_midi_files/ and train_wav_files directories have been git ignored due to the large space taken up due to training samples (approx. 1000 audio samples)
+
 # Installation note
 Python 3.7 64 bit had to be used in order to run pip install magenta and install sucessfully. The Numba and Python-rtmidi libraries created incompatibility and build errors when attempting to use versions higher than 3.7. 

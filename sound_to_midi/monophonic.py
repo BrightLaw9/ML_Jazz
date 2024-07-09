@@ -268,16 +268,16 @@ def pianoroll_to_midi(bpm: float, pianoroll: list) -> midiutil.MIDIFile():
 
 def wave_to_midi(
         audio_signal: np.array,
-        srate: int = 24050, #22050,
-        frame_length: int = 2048,
-        hop_length: int = 750,#512,
+        srate: int = 22050,
+        frame_length: int = int(2048/2),
+        hop_length: int = 250,#512,
         note_min: str = "C4",
         note_max: str = "C8",
-        p_stay_note: float = 0.9,
-        p_stay_silence: float = 0.7,
-        pitch_acc: float = 0.9,
-        voiced_acc: float = 0.9,
-        onset_acc: float = 0.9,
+        p_stay_note: float = 0.7,
+        p_stay_silence: float = 0.2,
+        pitch_acc: float = 0.75,
+        voiced_acc: float = 0.8,
+        onset_acc: float = 0.75,
         spread: float = 0.2) -> midiutil.MIDIFile():
     """Converts an audio signal to a MIDI file
 

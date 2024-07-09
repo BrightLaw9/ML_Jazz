@@ -1,3 +1,5 @@
 model_ckpts/
 training/
 temp_exclude/
+train_midi_files/
+train_wav_files/
