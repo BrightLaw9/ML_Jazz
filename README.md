@@ -13,5 +13,7 @@ The generated melody is then added over a backing rhythm section to complete the
 
 Note the train_midi_files/ and train_wav_files directories have been git ignored due to the large space taken up due to training samples (approx. 1000 audio samples)
 
+Spotify's audio-to-midi engine (trained neural network predicting midi) basic-pitch and ffmpeg were libraries used to prepare audio data for training. Tensorflow (through Magenta) was used for training and generating music. 
+
 # Installation note
 Python 3.7 64 bit had to be used in order to run pip install magenta and install sucessfully. The Numba and Python-rtmidi libraries created incompatibility and build errors when attempting to use versions higher than 3.7. 
