@@ -1,43 +1,52 @@
 # Music transformer as described in the research paper by Huang et al., 2018
 from math import sqrt
-from torch.nn import nn
+import torch.nn as nn
+from .relative_self_attn import RelativeSelfAttention
 
-class TransformerBlock(nn.Module): 
-    def __init__(self, d_model=512, nhead=8, dim_ff=2048, dropout=0.1):
+class TransformerBlock(nn.Module):
+    def __init__(self, d_model, nhead, dim_ff, max_len, dropout=0.1):
         super().__init__()
-        self.attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
+        self.attn = RelativeSelfAttention(d_model, nhead, max_len)
         self.ff = nn.Sequential(
-            nn.Linear(d_model, dim_ff), # take the d_model and expand it to dim_ff for more expressivity in capturing attention patterns
+            nn.Linear(d_model, dim_ff),
             nn.ReLU(),
             nn.Linear(dim_ff, d_model)
         )
+        self.ln1 = nn.LayerNorm(d_model)
+        self.ln2 = nn.LayerNorm(d_model)
 
-        self.ln_attention = nn.LayerNorm(d_model)
-        self.ln_ff = nn.LayerNorm(d_model)
-    
     def forward(self, x, attn_mask=None):
-        x2, _ = self.attn(x, x, x, attn_mask=attn_mask) # 3 x for query, key, value weighting
-        x = self.ln_attention(x + x2) #changes from attn
-        x2 = self.ff(x)
-        x = self.ln_ff(x + x2) # Adding changes from ff
+        # Pre layer norm? - might add more stability
+        # x2 = self.attn(self.ln_attention(x))
+        # x = x + x2
+        # x2 = self.ff(self.ln_ff(x))
+        # x = x + x2
+
+        # Post layer norm
+        x = self.ln1(x + self.attn(x, attn_mask))
+        x = self.ln2(x + self.ff(x))
         return x
 
-class JazzTransformer:
-    def __init__(self, vocab_size, d_model=512, n_layers=8, nhead=8):
+class JazzTransformer(nn.Module):
+    def __init__(self, vocab_size, max_len, d_model=512, 
+                 n_layers=8, nhead=8, dim_ff=2048):
         super().__init__()
         self.token_emb = nn.Embedding(vocab_size, d_model)
 
         self.input_ln = nn.LayerNorm(d_model)
-        self.layers = nn.ModuleList([TransformerBlock(d_model, nhead) for _ in range(n_layers)])
+        self.layers = nn.ModuleList(
+            [TransformerBlock(d_model, nhead, dim_ff, max_len)
+            for _ in range(n_layers)]
+        )
         self.out_head = nn.Linear(d_model, vocab_size)
 
     def forward(self, tokens, attn_mask=None):
         x = self.token_emb(tokens)
-        x = x.transpose(0, 1)
+        # x = x.transpose(0, 1)
         x = self.input_ln(x)
         for layer in self.layers: 
             x = layer(x, attn_mask)
-        x = x.transpose(0,1)
+        # x = x.transpose(0,1)
         return self.out_head(x)
 
 # class TransformerModel(nn.Module): 

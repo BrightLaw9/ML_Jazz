@@ -3,3 +3,8 @@ training/
 temp_exclude/
 train_midi_files/
 train_wav_files/
+train_midi_files_new/
+train_midi_pt/
+transcription_midi_samples/
+checkpoints/
+venv/
