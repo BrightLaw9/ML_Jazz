@@ -1,4 +1,5 @@
-from .midi_to_events import midi_to_events
+#from .midi_to_events import midi_to_events
+from .midi_to_events_dur import midi_to_events
 import os
 from pathlib import Path
 import torch
@@ -21,4 +22,6 @@ def convert_midi_dir(midi_root, out_root):
         except Exception as e:
             print(f"Skipping {path}: {e}")
 
-convert_midi_dir("train_midi_files_new", "train_midi_pt")
+#convert_midi_dir("output_wavs", "train_midi_pt_3")
+
+convert_midi_dir("train_midi_files_new", "train_midi_pt_dur")

@@ -10,6 +10,11 @@ import os
 import shlex
 import subprocess
 from optparse import OptionParser
+from pathlib import Path
+
+INPUT_DIR = "output_wavs/new_piano"
+INPUT_ROOT = Path(INPUT_DIR)
+OUTPUT_DIR = Path("output_wavs/new_piano")
 
 def get_video_length(filename):
     output = subprocess.check_output(("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of",
@@ -40,8 +45,14 @@ def split_by_seconds(filename, split_length, acodec="copy",
 
     split_cmd = ["ffmpeg", "-i", filename, "-acodec", acodec] + shlex.split(extra)
     try:
-        filebase = ".".join(filename.split(".")[:-1])
-        fileext = filename.split(".")[-1]
+        path = Path(filename)
+
+        filebase = path.stem
+        fileext = path.suffix
+
+        relative = path.parent.relative_to(INPUT_ROOT)
+        out_base_path = OUTPUT_DIR / relative
+        out_base_path.mkdir(parents=True, exist_ok=True)
     except IndexError as e:
         raise IndexError("No . in filename. Error: " + str(e))
     for n in range(0, split_count):
@@ -52,16 +63,17 @@ def split_by_seconds(filename, split_length, acodec="copy",
             split_start = split_length * n
 
         split_args += ["-ss", str(split_start), "-t", str(split_length),
-                       filebase + "-" + str(n + 1) + "-of-" +
-                       str(split_count) + "." + fileext]
+                       str(out_base_path / (f"{filebase}" + "-" + str(n + 1) + "-of-" +
+                       str(split_count) + fileext))]
         print("About to run: " + " ".join(split_cmd + split_args))
         subprocess.check_output(split_cmd + split_args)
 
 
 def main():
-    for file in glob.glob("./train_wav_files/**", recursive=True): 
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    for file in glob.glob(f"./{INPUT_DIR}/**", recursive=True): 
         if os.path.isfile(file):
-            split_by_seconds(file, 5*60)
+            split_by_seconds(file, 3*60)
 
 
 if __name__ == '__main__':

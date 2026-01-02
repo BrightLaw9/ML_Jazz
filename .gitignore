@@ -8,3 +8,7 @@ train_midi_pt/
 transcription_midi_samples/
 checkpoints/
 venv/
+train_midi_test/
+train_midi_pt_dur/
+train_*/
+output_wavs/

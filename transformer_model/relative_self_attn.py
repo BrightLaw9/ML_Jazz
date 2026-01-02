@@ -14,9 +14,9 @@ class RelativeSelfAttention(nn.Module):
         self.out = nn.Linear(d_model, d_model)
 
         # Relative position embeddings
-        self.rel_emb = nn.Parameter(
-            torch.randn(2 * max_len - 1, self.d_head)
-        )
+        # self.rel_emb = nn.Parameter(
+        #     torch.randn(2 * max_len - 1, self.d_head)
+        # )
 
     def _skew(self, x):
         # x: (B, H, L, 2L-1)
@@ -48,17 +48,18 @@ class RelativeSelfAttention(nn.Module):
 
         # Relative position scores
         # print("Rel embeddings", self.rel_emb.T.unsqueeze(0).unsqueeze(0).size())
-        rel_logits = torch.matmul(
-            q,                          # (B, H, L, d_head)
-            self.rel_emb.T.unsqueeze(0).unsqueeze(0)  # (1,1,d_head,2L-1)
-        )
-        # print("Rel logits: ", rel_logits.size())
-        rel_logits = self._skew(rel_logits)
+        # rel_logits = torch.matmul(
+        #     q,                          # (B, H, L, d_head)
+        #     self.rel_emb.T.unsqueeze(0).unsqueeze(0)  # (1,1,d_head,2L-1)
+        # )
+        # # print("Rel logits: ", rel_logits.size())
+        # rel_logits = self._skew(rel_logits)
 
         # print("Content scores: ", content_scores.size())
         # print("Rel logits: ", rel_logits.size())
 
-        scores = (content_scores + rel_logits) / (self.d_head ** 0.5)
+        # scores = (content_scores + rel_logits) / (self.d_head ** 0.5)
+        scores = (content_scores) / (self.d_head ** 0.5)
 
         if mask is not None:
             scores = scores.masked_fill(mask == 0, float('-inf'))

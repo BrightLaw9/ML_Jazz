@@ -1,7 +1,9 @@
 # Music transformer as described in the research paper by Huang et al., 2018
 from math import sqrt
 import torch.nn as nn
+import torch
 from .relative_self_attn import RelativeSelfAttention
+from .constants import D_MODEL, NUM_LAYERS, NHEAD, DIM_FF, NOTE_ON_OFFSET, DUR_OFFSET, VELOCITY_OFFSET, TIME_SHIFT_OFFSET
 
 class TransformerBlock(nn.Module):
     def __init__(self, d_model, nhead, dim_ff, max_len, dropout=0.1):
@@ -28,8 +30,8 @@ class TransformerBlock(nn.Module):
         return x
 
 class JazzTransformer(nn.Module):
-    def __init__(self, vocab_size, max_len, d_model=512, 
-                 n_layers=8, nhead=8, dim_ff=2048):
+    def __init__(self, vocab_size, max_len, d_model=D_MODEL, 
+                 n_layers=NUM_LAYERS, nhead=NHEAD, dim_ff=DIM_FF):
         super().__init__()
         self.token_emb = nn.Embedding(vocab_size, d_model)
 
@@ -40,6 +42,31 @@ class JazzTransformer(nn.Module):
         )
         self.out_head = nn.Linear(d_model, vocab_size)
 
+        self.vocab_size = vocab_size
+
+    @staticmethod
+    def build_logit_mask(tokens, vocab_size):
+        B, L = tokens.shape
+        mask = torch.zeros(B, L, vocab_size, device=tokens.device)
+
+        for b in range(B):
+            
+            for t in range(L):
+                # update state using ground truth
+                tok = tokens[b, t].item()
+                if NOTE_ON_OFFSET <= tok < DUR_OFFSET:
+                    mask[b, t, DUR_OFFSET:TIME_SHIFT_OFFSET] = 1
+                elif DUR_OFFSET <= tok < TIME_SHIFT_OFFSET:
+                    mask[b, t, VELOCITY_OFFSET:] = 1
+                    mask[b, t, TIME_SHIFT_OFFSET:VELOCITY_OFFSET] = 1
+                elif TIME_SHIFT_OFFSET <= tok < VELOCITY_OFFSET:
+                    mask[b, t, VELOCITY_OFFSET:] = 1
+                    mask[b, t, TIME_SHIFT_OFFSET:VELOCITY_OFFSET] = 1
+                elif VELOCITY_OFFSET <= tok:
+                    mask[b, t, NOTE_ON_OFFSET:DUR_OFFSET] = 1
+
+        return mask
+
     def forward(self, tokens, attn_mask=None):
         x = self.token_emb(tokens)
         # x = x.transpose(0, 1)
@@ -47,7 +74,14 @@ class JazzTransformer(nn.Module):
         for layer in self.layers: 
             x = layer(x, attn_mask)
         # x = x.transpose(0,1)
-        return self.out_head(x)
+        logits = self.out_head(x)
+
+        logit_mask = JazzTransformer.build_logit_mask(tokens, self.vocab_size)
+        print(f"Logit mask", logit_mask)
+
+        logits = logits.masked_fill(logit_mask == 0, float('-inf'))
+        print("Logits: ", logits)
+        return logits
 
 # class TransformerModel(nn.Module): 
 #     def __init__(self, d_model, num_layers, num_heads, d_ff, max_rel_dist, max_abs_position, vocab_size, dropout, bias, layernorm_eps):
