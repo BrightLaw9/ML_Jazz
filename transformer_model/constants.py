@@ -5,14 +5,17 @@ OPTIMIZER_CHECKPOINT_DIR = "checkpoints/optimizer/"
 
 TRAIN_DIR = "train_midi_test/"
 
-INFERENCE_MODEL = "model_ckpt_65.pth" #"trained.pth"
-INITIAL_TOKENS_PATH = "train_midi_pt/JAZZ_456_DOWNLOADS/CharlieParker_BluesForAlice_FINAL.pt"
+INFERENCE_MODEL = "model_ckpt_1001.pth" #"trained.pth"
+#INITIAL_TOKENS_PATH = "train_midi_pt_dur/JAZZ_456_DOWNLOADS/CharlieParker_BluesForAlice_FINAL.pt"
+# INITIAL_TOKENS_PATH = "train_midi_pt_dur/JAZZ_456_DOWNLOADS/ChetBaker_ThereWillNeverBeAnotherYou-1_FINAL.pt"
+#INITIAL_TOKENS_PATH = "train_midi_pt_dur/JAZZ_456_DOWNLOADS/CharlieParker_BluesForAlice_FINAL.pt"
+INITIAL_TOKENS_PATH = "train_midi_pt_dur/Jazz MIDI 3/AutumnLeaves.pt"
 GENERATED_SAVE_DIR = "transformer_gen/"
 
 D_MODEL = 512
-NUM_LAYERS = 5
+NUM_LAYERS = 8
 NHEAD = 8
-DIM_FF = 2048
+DIM_FF = 4096
 
 CKPT_MODEL = "" #"model_ckpt_977.pth"
 CKPT_OPTIM = "" #"optim_ckpt_977.pth"
@@ -37,3 +40,6 @@ VELOCITY_OFFSET = TIME_SHIFT_OFFSET + MAX_TIME_TOKENS #456
 MAX_VEL_TOK = 100
 
 VOCAB_SIZE = VELOCITY_OFFSET + MAX_VEL_TOK + 1 # exclusive
+
+def bin_to_velocity(vel):
+    return min(128 * vel // 32, MAX_VEL_TOK * 128 // 32)

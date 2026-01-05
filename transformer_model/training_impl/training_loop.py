@@ -20,7 +20,7 @@ def train():
     optimizer = torch.optim.AdamW(model.parameters(), lr=LEARN_RATE)
     scheduler = torch.optim.lr_scheduler.ExponentialLR(
             optimizer,
-            gamma=0.97
+            gamma=0.995
     )
     if CKPT_OPTIM:
         optimizer.load_state_dict(torch.load(OPTIMIZER_CHECKPOINT_DIR + CKPT_OPTIM))
@@ -45,7 +45,9 @@ def train():
            losses.append(loss.detach())
            count += 1
            if count % 1000 == 0:
-               tlos = torch.stack(losses)
+               tlos_data = torch.stack(losses)
+               finite_mask = torch.isfinite(tlos_data)
+               tlos = tlos_data[finite_mask]
                mean = tlos.mean().item()
                std = tlos.std(unbiased=False).item()
 
@@ -58,10 +60,10 @@ def train():
            optimizer.step()
            #print(f"Batch loss: {loss.item():.4f}")
 
-        # if epoch % CHECKPOINT_FREQ == 0:
-        #     # print(model.state_dict())
-        #     torch.save(model.state_dict(), MODEL_CHECKPOINT_DIR + f"model_ckpt_{epoch}.pth")
-        #     torch.save(optimizer.state_dict(), OPTIMIZER_CHECKPOINT_DIR + f"optim_ckpt_{epoch}.pth")
+        if epoch % CHECKPOINT_FREQ == 0:
+            # print(model.state_dict())
+            torch.save(model.state_dict(), MODEL_CHECKPOINT_DIR + f"model_ckpt_{epoch}.pth")
+            torch.save(optimizer.state_dict(), OPTIMIZER_CHECKPOINT_DIR + f"optim_ckpt_{epoch}.pth")
         
         scheduler.step()
         lr = optimizer.param_groups[0]["lr"]

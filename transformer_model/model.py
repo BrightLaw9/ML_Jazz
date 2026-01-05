@@ -77,10 +77,10 @@ class JazzTransformer(nn.Module):
         logits = self.out_head(x)
 
         logit_mask = JazzTransformer.build_logit_mask(tokens, self.vocab_size)
-        print(f"Logit mask", logit_mask)
+        #print(f"Logit mask", logit_mask)
 
         logits = logits.masked_fill(logit_mask == 0, float('-inf'))
-        print("Logits: ", logits)
+        # print("Logits: ", logits)
         return logits
 
 # class TransformerModel(nn.Module): 

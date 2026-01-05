@@ -7,7 +7,7 @@ import torch
 def convert_midi_dir(midi_root, out_root):
     os.makedirs(out_root, exist_ok=True)
 
-    for path in list(Path(midi_root).rglob("*.mid")):
+    for path in list(Path(midi_root).rglob("*.midi")):
 
         try:
             seq = midi_to_events(path)
@@ -24,4 +24,6 @@ def convert_midi_dir(midi_root, out_root):
 
 #convert_midi_dir("output_wavs", "train_midi_pt_3")
 
-convert_midi_dir("train_midi_files_new", "train_midi_pt_dur")
+#convert_midi_dir("train_midi_files_new", "train_midi_pt_dur")
+convert_midi_dir("train_midi_new_2", "train_midi_pt_dur")
+convert_midi_dir("output_wavs", "train_midi_pt_dur")
