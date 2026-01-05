@@ -1,5 +1,27 @@
 Jazz is a free-flowing musical language that is rooted in swing, and improvised melodies. In this project, I aimed to have an AI generate a comprehensible and melodical piece of music, with contrasting ranges in pitch, jazz articulations, and dynamics.
 
+## Samples from the 8 layer transformer model built from the ground up
+
+# Primer melody - Autumn Leaves - Chordal Melody
+(A sample is provided as context and for autoregressive generation, the generated melody starts at 0:27 - it is noticeable the difference - still working on improvements!)
+<audio src="autumn_leaves.mp3" controls></audio>
+
+# Blues for Alice 1 - Charlie Parker
+- One can notice the attempt to mirror the embelishments that Parker puts in
+<audio src="blues_for_alice_1.mp3" controls></audio>
+
+Sample 2
+<audio src="blues_for_alice_2.mp3" controls></audio>
+
+Sample 3
+<audio src="blues_for_alice_3.mp3" controls></audio>
+
+# There will never be another you - Chet Baker
+- a more space out melody which the model learns to imitate
+<audio src="never_be_another_you.mp3" controls></audio>
+
+## Previous experimentation with a pretrained model developed by Google Magenta
+
 ## Some background:
 - An Attention Recurrent Neural Network (RNN) was used to capture longer patterns within the music, allowing for better musical phrases and context. 
 - The song was based on the Charlie Parker tune, Blues for Alice. Piano was selected to be the lead instrument.
