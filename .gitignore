@@ -12,3 +12,4 @@ train_midi_test/
 train_midi_pt_dur/
 train_*/
 output_wavs/
+transfomer_gen/
