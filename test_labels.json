@@ -1,0 +1,35 @@
+[
+  {
+    "directory": "train_diffusion",
+    "labels": [
+      {
+        "file": "A Night In Tunisia by Dizzy Gillespie Arr. Michael Philip Mossman - Hal Leonard Jazz Ensemble (192k)_part003.wav",
+        "label": "Energetic, big band, latin jazz, high range trumpet"
+      },
+      {
+        "file": "A Night In Tunisia by Dizzy Gillespie Arr. Michael Philip Mossman - Hal Leonard Jazz Ensemble (192k)_part004.wav",
+        "label": "Energetic, big band, latin jazz, high range trumpet"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part003.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part002.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Hedwig's Theme (Theme from Harry Potter) - John Williams - Topic (192k)_part000.wav",
+        "label": "Harry Potter theme song, orchestral, movie music, magical"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part010.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "The Incredibles \u2022 Theme Music \u2022 Michael Giacchino - The Restless Warrior (192k)_part008.wav",
+        "label": "The Incredibles Theme Music, emphatic, orchestral, small saxophone"
+      }
+    ]
+    }
+]

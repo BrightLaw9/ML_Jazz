@@ -1,0 +1,463 @@
+[
+  {
+    "directory": "train_diffusion",
+    "labels": [
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part000.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part001.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part002.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part003.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part004.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part005.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part006.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part007.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part008.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part009.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part010.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part011.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part012.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part013.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Almost Like Being In Love - Red Garland (128k)_part014.wav",
+        "label": "Medium swing, jazz piano, jazz trio with bass and drums"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part000.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part001.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part002.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part003.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part004.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part005.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part006.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Au Privave (Fred Hersch, 2021)_part007.wav",
+        "label": "Bebop, Charlie Parker, jazz"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part000.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part001.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part002.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part003.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part004.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part005.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part006.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part007.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-3-of-26_part008.wav",
+        "label": "Bill Evans, jazz, spicy dissonant phrases"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part000.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part001.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part002.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part003.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part004.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part005.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part006.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part007.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Bill Evans Piano 1 Hour-4-of-26_part008.wav",
+        "label": "Full jazz trio, Bill Evans, jazz piano, jazz melodic playing"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part000.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part001.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part002.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part003.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part004.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part005.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part006.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part007.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-2-of-24_part008.wav",
+        "label": "Jazz melody, jazz piano, All the Things you are"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part000.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part001.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part002.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part003.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part004.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part005.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part006.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part007.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "Dayeoun Kim-3-of-24_part008.wav",
+        "label": "Autumn Leaves, Jazz Piano, Chordal and Melody playing"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part000.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part001.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part002.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part003.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part004.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part005.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part006.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part007.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part008.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part009.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part010.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part011.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part012.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part013.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-1-of-6_part014.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part000.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part001.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part002.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part003.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part004.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part005.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part006.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part007.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part008.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part009.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part010.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part011.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part012.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part013.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "New York Jazz Lounge with Relaxing Jazz Bar Classics \ud83c\udf77Jazz Music for Studying, Working, Sleeping [mM1dIwGO00w]-1-of-24-2-of-6_part014.wav",
+        "label": "Background lounge music, jazz music, relaxed, jazz trio (piano)"
+      },
+      {
+        "file": "A Night In Tunisia by Dizzy Gillespie Arr. Michael Philip Mossman - Hal Leonard Jazz Ensemble (192k)_part000.wav",
+        "label": "Energetic, big band, latin jazz, high range trumpet"
+      },
+      {
+        "file": "A Night In Tunisia by Dizzy Gillespie Arr. Michael Philip Mossman - Hal Leonard Jazz Ensemble (192k)_part001.wav",
+        "label": "Energetic, big band, latin jazz, high range trumpet"
+      },
+      {
+        "file": "A Night In Tunisia by Dizzy Gillespie Arr. Michael Philip Mossman - Hal Leonard Jazz Ensemble (192k)_part002.wav",
+        "label": "Energetic, big band, latin jazz, high range trumpet"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part000.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part001.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part002.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+          {
+        "file": "All The Things You Are - Infiltr8z (192k)_part004.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part005.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part006.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part007.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+      {
+        "file": "All The Things You Are - Infiltr8z (192k)_part008.wav",
+        "label": "Big Band, medium swing, reflective"
+      },
+       {
+        "file": "Elevator Music - Bohoman_part000.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part001.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part003.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part004.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part004.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part005.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part006.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part007.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "Elevator Music - Bohoman_part008.wav",
+        "label": "Elevator Music, background music, gentle ii-V-I music, smooth and relaxing"
+      },
+      {
+        "file": "The Incredibles \u2022 Theme Music \u2022 Michael Giacchino - The Restless Warrior (192k)_part000.wav",
+        "label": "The Incredibles Theme Music, emphatic, orchestral, small saxophone"
+      },
+      {
+        "file": "The Incredibles \u2022 Theme Music \u2022 Michael Giacchino - The Restless Warrior (192k)_part001.wav",
+        "label": "The Incredibles Theme Music, emphatic, orchestral, small saxophone"
+      },
+      {
+        "file": "The Incredibles \u2022 Theme Music \u2022 Michael Giacchino - The Restless Warrior (192k)_part002.wav",
+        "label": "The Incredibles Theme Music, emphatic, orchestral, small saxophone"
+      },
+      {
+        "file": "The Incredibles \u2022 Theme Music \u2022 Michael Giacchino - The Restless Warrior (192k)_part003.wav",
+        "label": "The Incredibles Theme Music, emphatic, orchestral, small saxophone"
+      },
+      {
+        "file": "The Incredibles \u2022 Theme Music \u2022 Michael Giacchino - The Restless Warrior (192k)_part004.wav",
+        "label": "The Incredibles Theme Music, emphatic, orchestral, small saxophone"
+      }
+    ]
+  }
+]

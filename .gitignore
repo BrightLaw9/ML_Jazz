@@ -13,3 +13,5 @@ train_midi_pt_dur/
 train_*/
 output_wavs/
 transfomer_gen/
+*.wav
+!Blues_for_Alice_ML_v3_clip.wav
