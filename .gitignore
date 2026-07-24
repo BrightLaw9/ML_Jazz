@@ -15,3 +15,5 @@ output_wavs/
 transfomer_gen/
 *.wav
 !Blues_for_Alice_ML_v3_clip.wav
+!diffusion_sample_audio/gen_orig_4.wav
+!diffusion_sample_audio/gen_4.wav

@@ -57,3 +57,19 @@ Notes & Notable Timestamps:
 - 1:33 - 1:34 - Melodical phrase generated!
 - 1:40 - 2:36 - A period of exotic back and forths with the upper and lower ranges of pitch (effects of attention)
 - 2:36 - Return to natural phrasing
+
+## Diffusion trial
+
+This trial explores learning diffusion by injecting random noise into an original audio sample.
+
+### Original audio sample
+
+`gen_orig_4.wav` is the original audio sample.
+
+<audio src="diffusion_sample_audio/gen_orig_4.wav" controls></audio>
+
+### Noisy diffusion sample
+
+`gen_4.wav` is the sample with random noise injected while the model is in the process of learning diffusion.
+
+<audio src="diffusion_sample_audio/gen_4.wav" controls></audio>
